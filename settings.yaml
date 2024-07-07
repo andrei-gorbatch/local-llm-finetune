@@ -35,7 +35,7 @@ ui:
   delete_all_files_button_enabled: true
 
 llm:
-  mode: llamacpp
+  mode: ollama
   prompt_style: "mistral"
   # Should be matching the selected model
   max_new_tokens: 512
@@ -63,7 +63,7 @@ llamacpp:
 
 embedding:
   # Should be matching the value above in most cases
-  mode: huggingface
+  mode: ollama
   ingest_mode: simple
   embed_dim: 384 # 384 is for BAAI/bge-small-en-v1.5
 
